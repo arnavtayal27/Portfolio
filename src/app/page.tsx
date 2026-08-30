@@ -254,13 +254,19 @@ export default function Home() {
             I'm open to Cloud, DevOps and infrastructure engineering opportunities.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href={`mailto:${profile.email}`} className="px-8 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-cyan-600 transition-all hover:-translate-y-1 shadow-lg shadow-slate-200">
-              Email Me
+            <a href={`https://wa.me/${profile.whatsapp.replace(/[^0-9]/g, '')}?text=Hi%20Arnav,%20can%20we%20connect?`} target="_blank" rel="noreferrer" className="px-8 py-4 bg-emerald-500 text-white font-bold rounded-xl hover:bg-emerald-600 transition-all hover:-translate-y-1 shadow-lg shadow-emerald-500/20 flex items-center gap-2">
+              WhatsApp
             </a>
-            <a href={profile.linkedin} target="_blank" rel="noreferrer" className="px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 font-bold rounded-xl hover:border-cyan-600 hover:text-cyan-700 transition-all hover:-translate-y-1">
+            <a href={`tel:${profile.whatsapp.replace(/[^0-9+]/g, '')}`} className="px-8 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-cyan-600 transition-all hover:-translate-y-1 shadow-lg shadow-slate-200 flex items-center gap-2">
+              Call Me
+            </a>
+            <a href={`mailto:${profile.email}`} className="px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 font-bold rounded-xl hover:border-cyan-600 hover:text-cyan-700 transition-all hover:-translate-y-1 flex items-center gap-2">
+              Email
+            </a>
+            <a href={profile.linkedin} target="_blank" rel="noreferrer" className="px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 font-bold rounded-xl hover:border-cyan-600 hover:text-cyan-700 transition-all hover:-translate-y-1 flex items-center gap-2">
               LinkedIn
             </a>
-            <a href={profile.github} target="_blank" rel="noreferrer" className="px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 font-bold rounded-xl hover:border-cyan-600 hover:text-cyan-700 transition-all hover:-translate-y-1">
+            <a href={profile.github} target="_blank" rel="noreferrer" className="px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 font-bold rounded-xl hover:border-cyan-600 hover:text-cyan-700 transition-all hover:-translate-y-1 flex items-center gap-2">
               GitHub
             </a>
           </div>
